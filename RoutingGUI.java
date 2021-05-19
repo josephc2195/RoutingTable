@@ -67,7 +67,6 @@ public class RoutingGUI {
                 mask[0] = mask1.getText();
                 mask[1] = mask2.getText();
                 mask[2] = mask3.getText();
-                //andOperation();
             }
         });
 
@@ -98,75 +97,4 @@ public class RoutingGUI {
         new RoutingGUI();
         Scanner scan = new Scanner (System.in);
 
-
-        // reading the desired routing table size
-        //System.out.print("Enter the desired size of the routing table: ");
-        //num = scan.nextInt ();
-
-        // clicking "enter" to start entering data
-        /*String str;
-        System.out.println("***Click 'Enter'***");
-        str = scan.nextLine ();
-        String routing_table[] = new String[num];
-
-        // begin entering the data (in this case - from Exercise 33 Chapter 5)
-        System.out.println("Enter the contents of the table in the following format:");
-
-        // binary and subnet mask with the input IP address to extract the network part of the address
-        System.out.println("Address/Subnet mask Next hop");
-
-        for (int i = 0; i < num; i++) {
-          routing_table[i] = scan.nextLine();
-        }
-        */
-        // split the IP addresses by a period
-
-
-        // split the routing table
-
-    }
-
-    /*public void andOperation() {
-      String split_ip[];
-      split_ip = ip_address.split("[.]");
-      String routingtab_split[][] = new String[num][];
-      for (int i = 0; i < num - 1; i++) {
-        routingtab_split[i] = routing_table[i].split("[.]");
-      }
-
-      int same = 0;
-      for(int i = 0; i < num-1; i++) {
-          int block = Integer.parseInt(mask[i]);
-          int address[] = {0, 0, 0, 0};
-          int max = 7;
-          int count = 0;
-          while(block > 0){
-              if(max != 0) {
-                  address[count] += (int)Math.pow(2, max);
-                  max--;
-              }
-              else {
-                  address[count] += 1;
-                  count ++;
-                  max = 7;
-              }
-              block --;
-          }
-          for(int x = 0; x < split_ip.length; x++) {
-              int holder = Integer.parseInt(split_ip[x]);
-              if(holder != Integer.parseInt(routingtab_split[i][])) {
-                  same = 0;
-                  break;
-              }
-              else {
-                  same ++;
-              }
-              if(same == split_ip.length) {
-                  System.out.println("IP found in routing table. Routing packet to: " +  hop[i]);
-              }
-          }
-      }
-      System.out.println("IP not found. Routing packet to: " + routingtab_split[num - 1][routingtab_split[num - 1].length - 2] + " " + routingtab_split[num - 1][routingtab_split[num - 1].length - 1]);
-
-  }*/
 }
